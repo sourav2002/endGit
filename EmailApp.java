@@ -10,7 +10,7 @@ public class EmailApp{
         System.out.print("Enter your Last name: ");
         var lastname = in.nextLine();
         Email em1 = new Email(firstname, lastname);
-        System.out.println( em1.showInfo());
+        System.out.println( em1.showInfo());//print
         try {    
 		File newFile = new File("filename.txt");
 		FileWriter fileWrite = new FileWriter(newFile, true);
@@ -19,7 +19,7 @@ public class EmailApp{
 		if(newFile.exists() == false){
 			newFile.createNewFile();
 			write.print(em1.showInfo()+"\n\n");
-			System.out.println("Info Successfully Saved!");
+			System.out.println("Info Successfully Saved!");//print
 		}else{
             write.print(em1.showInfo()+"\n\n");
             System.out.println("\nInfo Successfully Saved!");
